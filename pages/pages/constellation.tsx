@@ -30,6 +30,7 @@ export default function ConstellationLandingPage() {
           Aplicar agora
         </motion.a>
       </motion.section>
+
       {/* Sessões */}
       <ContentBlock title="A DIVISÃO INVISÍVEL" text="Você sente que precisa escolher entre duas forças: Ser profundamente autêntico. Ou tecnologicamente eficiente. Mas e se essa escolha estiver errada? A verdade é: a nova liderança une." />
       <ContentBlock title="A TENSÃO QUE VOCÊ VIVE (E NEM SEMPRE CONSEGUE NOMEAR)" text="Quando você usa IA ou ferramentas avançadas, os resultados são bons… mas sem alma. Quando segue apenas sua intuição, falta estrutura, método, escala. Você quer crescer, mas não quer se perder no processo. Constellation não é sobre escolher um lado. É sobre criar um novo modelo, onde tecnologia amplifica sua autenticidade." />
@@ -39,6 +40,7 @@ export default function ConstellationLandingPage() {
       <ContentBlock title="PARA QUEM É" text="Líderes, empreendedores, estrategistas ou mentores com visão. Que já venceram o básico e querem criar algo 10x maior. Que desejam integrar alma e inovação com sofisticação." />
       <ContentBlock title="O QUE VOCÊ RECEBE" text="\nInteligência Ancestral:\n- Práticas milenares para fortalecer sua essência e liderança.\n- Ensinamentos profundos com aplicação real no cotidiano.\n\nInteligência Artificial:\n- Treinamento em ferramentas de IA que impulsionam sua atuação.\n- Orientação estratégica para integrar tecnologia ao seu plano de ação.\n\nMapa de Integração:\n- Um plano completo para alinhar quem você é ao que você faz.\n- Sem deixar nenhuma parte sua para trás." />
       <ContentBlock title="O FECHAMENTO" text="O futuro não vai esperar você se alinhar. Mas você pode criar um futuro alinhado com quem você é. CONSTELLATION é a imersão onde você reconecta alma e inovação, cria seu novo plano de liderança e sai pronto para jogar um jogo só seu.\n\n🚀 Próxima turma: São Paulo (datas limitadas)\n🔗 Clique aqui para aplicar e solicitar sua vaga" />
+
       {/* Galeria de Imagens */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -82,6 +84,9 @@ export default function ConstellationLandingPage() {
       </motion.section>
     </motion.div>
   );
+}
+
+// ⬇️ ESTA FUNÇÃO DEVE FICAR FORA da função principal
 function ContentBlock({ title, text }: { title: string; text: string }) {
   return (
     <motion.section
@@ -96,3 +101,4 @@ function ContentBlock({ title, text }: { title: string; text: string }) {
     </motion.section>
   );
 }
+
